@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AJViewController : UIViewController
+#import <CoreBluetooth/CoreBluetooth.h>
+
+@interface AJViewController : UIViewController <CBPeripheralManagerDelegate>
 
 @end

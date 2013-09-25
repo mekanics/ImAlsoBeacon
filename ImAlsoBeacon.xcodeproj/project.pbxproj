@@ -21,6 +21,8 @@
 		199BC7F117F2F68E00C29364 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199BC7D317F2F68E00C29364 /* UIKit.framework */; };
 		199BC7F917F2F68E00C29364 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 199BC7F717F2F68E00C29364 /* InfoPlist.strings */; };
 		199BC7FB17F2F68E00C29364 /* ImAlsoBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 199BC7FA17F2F68E00C29364 /* ImAlsoBeaconTests.m */; };
+		199BC80517F2F76A00C29364 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199BC80417F2F76A00C29364 /* CoreBluetooth.framework */; };
+		199BC80717F2F85500C29364 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199BC80617F2F85500C29364 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		199BC7F617F2F68E00C29364 /* ImAlsoBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImAlsoBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		199BC7F817F2F68E00C29364 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		199BC7FA17F2F68E00C29364 /* ImAlsoBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImAlsoBeaconTests.m; sourceTree = "<group>"; };
+		199BC80417F2F76A00C29364 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		199BC80617F2F85500C29364 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199BC80717F2F85500C29364 /* CoreLocation.framework in Frameworks */,
+				199BC80517F2F76A00C29364 /* CoreBluetooth.framework in Frameworks */,
 				199BC7D217F2F68E00C29364 /* CoreGraphics.framework in Frameworks */,
 				199BC7D417F2F68E00C29364 /* UIKit.framework in Frameworks */,
 				199BC7D017F2F68E00C29364 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		199BC7CE17F2F68E00C29364 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				199BC80617F2F85500C29364 /* CoreLocation.framework */,
+				199BC80417F2F76A00C29364 /* CoreBluetooth.framework */,
 				199BC7CF17F2F68E00C29364 /* Foundation.framework */,
 				199BC7D117F2F68E00C29364 /* CoreGraphics.framework */,
 				199BC7D317F2F68E00C29364 /* UIKit.framework */,
@@ -200,6 +208,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alexandre Joly";
 				TargetAttributes = {
+					199BC7CB17F2F68E00C29364 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					199BC7EC17F2F68E00C29364 = {
 						TestTargetID = 199BC7CB17F2F68E00C29364;
 					};
@@ -461,6 +476,7 @@
 				199BC80017F2F68E00C29364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		199BC80117F2F68E00C29364 /* Build configuration list for PBXNativeTarget "ImAlsoBeaconTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +485,7 @@
 				199BC80317F2F68E00C29364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
